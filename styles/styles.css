@@ -1,0 +1,134 @@
+/* * General */
+* {
+    padding: 0;  
+    margin: 0;
+    box-sizing: border-box; 
+   
+   }
+h1 {
+    color:#ffffff;
+    text-align: center;
+    font-size: 32px;
+}
+h2 {
+    color:#ffffff;
+    text-align: center;
+    font-size: 28px;
+
+}
+h3 {
+    color:#ffffff;
+    text-align: center;
+    font-size: 24px;
+
+}
+.flex {
+    display: flex;
+}
+body {
+    margin: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #222222;
+    color: #bbbbbb;
+}
+/* * Comienzo Cabecera */
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/image1.jpg);
+    background-size:contain;
+}
+.cabecera img {
+    width: 100%;
+}
+/* * Comienzo Menu */
+.menu_ppal {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #111111ee;
+}
+.menu_ppal a {
+    text-decoration: none;
+}
+.menu_ppal a img {
+    width: 150px;
+}
+.menu_ppal ul {
+    padding-inline-start: 0px;
+    margin: 0px;
+    
+}
+.menu_ppal ul li a{
+    font-size: 20px;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 4px;
+    color:#dddddd;
+}
+.menu_ppal ul li a:hover{
+    background-color: #333333;
+}
+.menu_ppal ul li a:active{
+    background-color: #ffffff;
+}
+/* * Fin Menu */
+/* * Fin Cabecera */
+
+body main {
+    margin: 5px;
+}
+/* * Comienzo Principal */
+.principal {
+    flex: 3;
+    margin: 5px;
+    padding: 0px 15px 15px 15px;
+    border-radius: 15px;
+    background-color: #444;
+}
+.principal div{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.principal section {
+    text-align: center;
+}
+.principal section img {
+    width: auto;
+    max-width: 400px;
+    border: #bbbbbb solid 5px;
+    border-radius: 25px;
+}
+.principal table {
+    border: #bbbbbb solid;
+}
+.principal table tr td img {
+    width: 128px;
+}
+/* * Fin Principal */
+
+/* * Comienzo Secundario */
+.secundario {
+    flex: 1;
+    margin: 5px;
+    padding: 0px 15px 15px 15px;
+    border-radius: 15px;
+    background-color: #444;
+}
+/* * Fin Secundario */
+
+/* * Inicio Pie de página */
+footer {
+    text-align: center;
+}
+footer ul {
+    background-color:#111;
+    margin: 0;
+    padding: 10px;
+    
+}
+footer ul li a img {
+    width: 48px;
+}
+/* * Fin Pie de página */
