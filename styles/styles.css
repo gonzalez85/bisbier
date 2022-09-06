@@ -25,6 +25,16 @@ h3 {
 .flex {
     display: flex;
 }
+.grilla, .grilla2 {
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "principal"
+    "secundario"
+    "footer";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
 body {
     margin: 0px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -32,6 +42,9 @@ body {
     color: #bbbbbb;
 }
 /* * Comienzo Cabecera */
+header {
+        grid-area: cabecera;
+}
 .cabecera {
     display: flex;
     flex-direction: column;
@@ -79,6 +92,9 @@ body main {
     margin: 5px;
 }
 /* * Comienzo Principal */
+article {
+        grid-area: principal;
+}
 .principal {
     flex: 3;
     margin: 5px;
@@ -109,6 +125,9 @@ body main {
 /* * Fin Principal */
 
 /* * Comienzo Secundario */
+aside {
+    grid-area: secundario;
+}
 .secundario {
     flex: 1;
     margin: 5px;
@@ -120,15 +139,44 @@ body main {
 
 /* * Inicio Pie de página */
 footer {
+    grid-area: footer;
     text-align: center;
 }
 footer ul {
+    display: flex;
+    justify-content: center;
     background-color:#111;
     margin: 0;
     padding: 10px;
-    
+    list-style: none;
+}
+footer ul a{
+    text-decoration: none;
 }
 footer ul li a img {
     width: 48px;
 }
 /* * Fin Pie de página */
+
+/* * Comienzo @media */
+@media screen and (min-width: 640px) {
+    .grilla {
+        grid-template-areas: 
+        "cabecera cabecera"
+        "principal secundario"
+        "footer footer";
+        grid-template-columns: 3fr 1fr;
+        row-gap: 0px;
+        column-gap: 0px;
+      }
+      .grilla2 {
+        grid-template-areas: 
+        "cabecera"
+        "principal"
+        "footer";
+        grid-template-columns:1fr;
+        row-gap: 0px;
+        column-gap: 0px;
+      }
+      }
+  /* * Fin @media */
