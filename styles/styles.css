@@ -112,7 +112,7 @@ article {
     text-align: center;
 }
 .principal section img {
-    width: auto;
+    width: 90%;
     max-width: 400px;
     border: #bbbbbb solid 5px;
     border-radius: 25px;
