@@ -54,6 +54,12 @@ header {
 .cabecera img {
     width: 100%;
 }
+.logo_clic {
+    transition: width 0.5s ease;
+}
+.logo_clic:active {
+    width: 200px;
+}
 /* * Comienzo Menu */
 .menu_ppal {
     display: flex;
