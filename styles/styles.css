@@ -28,6 +28,9 @@ h3 {
     padding-left: 0;
     padding-right: 0;
 }
+.card {
+    background-color: #111;
+}
 /* .grilla, .grilla2 {
     display: grid;
     grid-template-areas: 
@@ -40,7 +43,7 @@ h3 {
 } */
 body {
     margin: 0px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background-color: #222222;
     color: #bbbbbb;
 }
@@ -112,18 +115,22 @@ body main {
 article {
         grid-area: principal;
 }
+.tienda {
+    text-align: -webkit-center;
+}
 .principal {
-    flex: 3;
+    /* flex: 3; */
     margin: 5px;
-    padding: 0px 15px 15px 15px;
+    padding: 10px 15px 15px 15px;
     border-radius: 15px;
     background-color: #444;
+    font-size: 21px;
 }
-.principal div{
+/* .principal div{
     display: flex;
     align-self: center;
     justify-content: center;
-}
+} */
 .principal section {
     text-align: center;
 }
@@ -148,9 +155,10 @@ aside {
 .secundario {
     flex: 1;
     margin: 5px;
-    padding: 0px 15px 15px 15px;
+    padding: 10px 15px 15px 15px;
     border-radius: 15px;
     background-color: #444;
+    font-size: 16px;
 }
 /* * Fin Secundario */
 
