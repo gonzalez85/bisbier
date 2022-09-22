@@ -1,0 +1,18 @@
+footer {
+    grid-area: footer;
+    text-align: center;
+    ul {
+        display: flex;
+        justify-content: center;
+        background-color:#111;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        a{
+            text-decoration: none;
+        }
+        li a img {
+            width: 48px;
+        }
+    }
+}
