@@ -30,6 +30,19 @@ h3 {
 }
 .card {
     background-color: #111;
+    border-width: 3px;
+}
+.btn-primary {
+    background-color: #333;
+    border-color: #333;
+    &:active {
+        background-color: #222;
+        border-color: #222;
+    }
+    &:hover {
+        background-color: #222;
+        border-color: #222;
+    }
 }
 body {
     margin: 0px;
