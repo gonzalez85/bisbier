@@ -27,11 +27,7 @@ article {
 aside {
     grid-area: secundario;
 }
+
 .secundario {
-    flex: 1;
-    margin: 5px;
-    padding: 10px 15px 15px 15px;
-    border-radius: 15px;
-    background-color: #444;
-    font-size: 16px;
+@include secundario($backColor:#444, $tamFuente:16px)
 }

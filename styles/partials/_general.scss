@@ -5,19 +5,16 @@
     box-sizing: border-box; 
 }
 h1 {
-    color:#ffffff;
-    text-align: center;
+ @extend %titulos;
     font-size: 32px;
 }
 h2 {
-    color:#ffffff;
-    text-align: center;
+    @extend %titulos;
     font-size: 28px;
 
 }
 h3 {
-    color:#ffffff;
-    text-align: center;
+    @extend %titulos;
     font-size: 24px;
 }
 .flex {
@@ -29,7 +26,7 @@ h3 {
     padding-right: 0;
 }
 .card {
-    background-color: #111;
+    background-color: map-get($colores, backgroundPpal);
     border-width: 3px;
 }
 .btn-primary {
