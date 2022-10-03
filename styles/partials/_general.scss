@@ -29,6 +29,9 @@ h3 {
     background-color: map-get($colores, backgroundPpal);
     border-width: 3px;
 }
+.card-text{
+    font-size: 18px;
+}
 .btn-primary {
     background-color: #333;
     border-color: #333;
