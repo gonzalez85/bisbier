@@ -1,6 +1,9 @@
 header {
   grid-area: cabecera;
 }
+header img {
+  width: 100%;
+}
 
 .cabecera {
   display: flex;
