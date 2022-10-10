@@ -4,24 +4,36 @@
     margin: 0;
     box-sizing: border-box; 
 }
-h1 {
- @extend %titulos;
-    font-size: 32px;
-}
-h2 {
+h1, h2, h3, h4, h5, h6, legend {
     @extend %titulos;
-    font-size: 28px;
+    font-family: 'Clicker Script', cursive;
+}
+h1 {
+    font-size: 48px;
+}
+h2, legend {
+    font-size: 36px;
 
 }
 h3 {
-    @extend %titulos;
-    font-size: 24px;
+    font-size: 32px;
+}
+h5 {
+    font-size: 28px;
 }
 .flex {
     display: flex;
 }
 // Bootstrap
-
+.navbar{
+    padding: 0em 0.5em 0em 0em;
+}
+.navbar-toggler {
+    border-width: 0;
+    &:focus {
+        box-shadow: 0 0 0 0;
+    }
+}
 .row>* {
     padding-left: 0;
     padding-right: 0;
@@ -32,6 +44,29 @@ h3 {
 }
 .card-text{
     font-size: 18px;
+}
+.contact_form {
+    max-width: 640px;
+    background-color: #111;
+    padding: 15px;
+    border-radius: 10px;
+    fieldset {
+        text-align: left;
+        max-width: 524px;
+        textarea {
+            width: 100%;
+            min-height: 150px;
+            background-color: #111;
+            padding: 0 5px 0 5px;
+            color: #fff;
+        }
+    }
+}
+input {
+    background-color: #111;
+    border-width: 0 0 2px 0;
+    padding: 0 5px 0 5px;
+    color: #fff;
 }
 .btn-primary {
     background-color: #333;
@@ -45,9 +80,35 @@ h3 {
         border-color: #222;
     }
 }
+.btn_form {
+    background-color: #333;
+    border-color: #333;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    &:active {
+        background-color: #222;
+        border-color: #222;
+    }
+    &:focus {
+        background-color: #555;
+        border-color: #555;
+        box-shadow: 0 0 0 0.25rem rgba(185, 185, 185, 0.5);
+    }
+    &:hover {
+        background-color: #222;
+        border-color: #222;
+        color: #fff;
+    }
+}
 body {
+    background: #111 url(../images/bg.jpg) center 30px repeat-y fixed;
+    background-size: cover;
     margin: 0px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Architects Daughter', cursive;
     background-color: #222222;
     color: #bbbbbb;
     main {
@@ -123,6 +184,19 @@ body {
         row-gap: 0px;
         column-gap: 0px;
       }
+      .grilla_estilos {
+        display: grid;
+        max-width: 700px;
+        grid-template-areas: 
+        "estilo1_img estilo1_desc"
+        "estilo2_img estilo2_desc"
+        "estilo3_img estilo3_desc"
+        "estilo4_img estilo4_desc"
+        "estilo5_img estilo5_desc";
+        grid-template-rows: 1fr;
+        grid-template-columns: 3fr 4fr;
+        text-align: left;
+    }
       footer ul li a img {
         transition: all 0.5s ease;
         &:hover {
@@ -130,4 +204,15 @@ body {
         margin: 0px;
         }
     }
-      }
+    .estilo1_img, .estilo2_img, .estilo3_img, .estilo4_img, .estilo5_img {
+        border-radius: 15px 0 0 15px;
+    }
+    .principal {
+        section {
+            margin: 10px 0 10px 0;
+            img {
+                border-radius: 15px 0 0 15px;
+            }
+        }
+    }
+}
