@@ -23,57 +23,14 @@ header img {
   background-color: #111;
 }
 
-.menu_ppal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(17, 17, 17, 0.9333333333);
-}
-.menu_ppal a {
-  text-decoration: none;
-}
-.menu_ppal a img {
-  width: 150px;
-}
-.menu_ppal ul {
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
-  margin: 0px;
-}
-.menu_ppal ul li a {
-  font-size: 12px;
-  border-radius: 4px;
-  margin: 2px;
-  padding: 4px;
-  color: #dddddd;
-}
-.menu_ppal ul li a:hover {
-  background-color: #333333;
-}
-.menu_ppal ul li a:active {
-  background-color: #ffffff;
-}
-
 h1, h2, h3, h4, h5, h6, legend {
   color: #fff;
   text-align: center;
+  font-family: "Clicker Script", cursive;
 }
 
 article {
   grid-area: principal;
-}
-
-.grilla_estilos {
-  display: grid;
-  grid-template-areas: "estilo1_img" "estilo1_desc" "estilo2_img" "estilo2_desc" "estilo3_img" "estilo3_desc" "estilo4_img" "estilo4_desc" "estilo5_img" "estilo5_desc";
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  text-align: left;
-}
-
-.tienda {
-  text-align: -webkit-center;
 }
 
 .principal {
@@ -94,12 +51,12 @@ article {
   border-radius: 15px 15px 0 0;
 }
 
-.img_news {
-  border: 3px solid #111;
-  border-radius: 0 10% 0 10%;
-  margin: 10px 0 10px 0;
-  max-width: 800px;
-  width: 100%;
+.grilla_estilos {
+  display: grid;
+  grid-template-areas: "estilo1_img" "estilo1_desc" "estilo2_img" "estilo2_desc" "estilo3_img" "estilo3_desc" "estilo4_img" "estilo4_desc" "estilo5_img" "estilo5_desc";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  text-align: left;
 }
 
 .estilo1_img, .estilo2_img, .estilo3_img, .estilo4_img, .estilo5_img {
@@ -109,6 +66,18 @@ article {
 
 .estilo1_desc, .estilo2_desc, .estilo3_desc, .estilo4_desc, .estilo5_desc {
   padding: 20px;
+}
+
+.tienda {
+  text-align: -webkit-center;
+}
+
+.img_news {
+  border: 3px solid #111;
+  border-radius: 0 10% 0 10%;
+  margin: 10px 0 10px 0;
+  max-width: 800px;
+  width: 100%;
 }
 
 aside {
@@ -152,10 +121,6 @@ footer ul li a img {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, legend {
-  font-family: "Clicker Script", cursive;
-}
-
 h1 {
   font-size: 48px;
 }
@@ -172,8 +137,23 @@ h5 {
   font-size: 28px;
 }
 
-.flex {
-  display: flex;
+body {
+  background: #111 url(../images/bg.jpg) center repeat-y fixed;
+  background-size: cover;
+  margin: 0px;
+  font-family: "Architects Daughter", cursive;
+  background-color: #222222;
+  color: #bbbbbb;
+}
+body main {
+  margin: 5px;
+}
+
+.grilla, .grilla2 {
+  display: grid;
+  grid-template-areas: "cabecera" "principal" "secundario" "footer";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .navbar {
@@ -217,6 +197,7 @@ h5 {
   background-color: #111;
   padding: 0 5px 0 5px;
   color: #fff;
+  margin: 10px 0 0 0;
 }
 
 input {
@@ -224,6 +205,7 @@ input {
   border-width: 0 0 2px 0;
   padding: 0 5px 0 5px;
   color: #fff;
+  margin: 0 0 10px 0;
 }
 
 .btn-primary {
@@ -264,39 +246,14 @@ input {
   color: #fff;
 }
 
-body {
-  background: #111 url(../images/bg.jpg) center 30px repeat-y fixed;
-  background-size: cover;
-  margin: 0px;
-  font-family: "Architects Daughter", cursive;
-  background-color: #222222;
-  color: #bbbbbb;
-}
-body main {
-  margin: 5px;
-}
-
-.grilla, .grilla2 {
-  display: grid;
-  grid-template-areas: "cabecera" "principal" "secundario" "footer";
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-}
-
 @media screen and (min-width: 320px) {
   .logo_clic {
     width: 90px;
-  }
-  .menu_ppal ul li a {
-    font-size: 14px;
   }
 }
 @media screen and (min-width: 480px) {
   .logo_clic {
     width: 120px;
-  }
-  .menu_ppal ul li a {
-    font-size: 16px;
   }
 }
 @media screen and (min-width: 640px) {
@@ -314,12 +271,6 @@ body main {
   }
   .logo_clic {
     width: 150px;
-  }
-  .menu_ppal ul li a {
-    font-size: 20px;
-  }
-  .menu_ppal {
-    flex-direction: row;
   }
   .grilla {
     grid-template-areas: "cabecera cabecera" "principal secundario" "footer footer";

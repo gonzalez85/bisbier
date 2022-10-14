@@ -7,45 +7,14 @@ header {
 .cabecera {
     display: flex;
     flex-direction: column;
-    background-size:contain;
+    background-size: contain;
 }
 .logo_clic {
     width: 64px;
-    
 }
 .bg-dark{
     opacity: 0.9;
 }
 .menu {
     background-color: $color_fondo_menu;
-}
-.menu_ppal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    background-color: #111111ee;
-    a {
-        text-decoration: none;
-        img {
-            width: 150px;
-        }
-    }
-    ul {
-        padding-inline-start: 0px;
-        margin: 0px;
-        li a{
-            font-size: 12px;
-            border-radius: 4px;
-            margin: 2px;
-            padding: 4px;
-            color:#dddddd;
-            &:hover{
-                background-color: #333333;
-            }
-            &:active{
-                background-color: #ffffff;
-            }
-        }
-    }
 }
